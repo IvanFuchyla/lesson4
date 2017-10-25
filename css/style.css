@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://image.ibb.co/bXav1R/maket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: auto;
+    background: #eeeeee;
+    box-shadow: 3px 3px 3px 3px hsla(0, 0%, 0%, 0.2);
+}
+
+.content,
+.aside {
+    box-sizing: border-box;
+    padding: 25px 15px 25px 15px;
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.content {
+    width: 69%;
+}
+
+.aside {
+    width: 30%;
+    counter-reset: count;
+}
+
+img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: blue;
+    padding-bottom: 25px;
+}
+
+h4 {
+    color: blue;
+}
+
+.aside h4 {
+    counter-increment: count;
+}
+
+.aside h4:before {
+    content: counter(count);
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.section,
+.menu {
+    box-sizing: border-box;
+    padding: 15px 10px 25px 10px;
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.section {
+    width: 69%;
+    padding-bottom: 20px;
+}
+
+.menu {
+    width: 30%;
+}
+
+.block {
+    width: 130px;
+    min-height: 80px;
+    background: gray;
+    border: solid 1px gray;
+    float: left;
+    padding: 5px;
+    vertical-align: top;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid gray;
+    position: relative;
+    top: 85px;
+    left: 55px;
+    padding-bottom: 120px;
+}
+
+.menu p {
+    text-align: center;
+}
+
+.menu h4 {
+    text-align: center;
+}
+
+.hav,
+.vah {
+    width: 49%;
+    display: inline-block;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding: 25px 10px 20px 10px;
+}
+
+li {
+    list-style-type: none;
+    color: blue;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+li:before {
+    content: "→";
+    color: rgb(54, 155, 223);
+}
+
+a {
+    color: rgb(54, 155, 223);
+    text-decoration: none;
+}
